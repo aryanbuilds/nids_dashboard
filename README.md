@@ -72,3 +72,21 @@ nssm install nids-backend
 nssm start nids-backend
 ```
 -[X]This setup should ensure your project is properly structured and ready for deployment. 
+
+
+## Commands to remeber for suricata 
+ - to test the configuration file on network <interface> in my case it;s 'eth0'
+ - to check yours use ```ifconfig``` in terminal(linux).
+
+```
+sudo suricata -c /etc/suricata/suricata.yaml -i <interface> -v  
+```
+- to check the suricata working 
+```
+curl http://testmynids.org/uid/index.html  
+```
+- now run the command to check logs in realtime and you can change the event type(my case - filetype) by your choice.
+```
+sudo tail -f eve.json | jq 'select(.event_type=="fileinfo")'
+```
+[[suricata_test.png]]

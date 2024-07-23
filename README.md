@@ -89,4 +89,4 @@ curl http://testmynids.org/uid/index.html
 ```
 sudo tail -f eve.json | jq 'select(.event_type=="fileinfo")'
 ```
-![[suricata_test.png]]
+![suricata_test.png]

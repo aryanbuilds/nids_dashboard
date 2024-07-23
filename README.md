@@ -1,12 +1,16 @@
 # Setup Steps
 >[!info] SURICATA REQUIRED TO SETUP FOLLOW ANY ONLINE RESOURCE FOR THIS.
-## Set up environment:
+## Set up whole environment:
+- give permission to files
 ```
-bash setup_env.sh
+chmod +x setup_db.sh
+chmod +x setup_env.sh
+chmod +x main_script.sh
+
 ```
-## Set up database:
+- then run main_script.sh
 ```
-bash setup_db.sh
+./main_script.sh
 ```
 ## Start backend:
 ```

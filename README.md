@@ -1,4 +1,5 @@
 # Setup Steps
+>[!info] SURICATA REQUIRED TO SETUP FOLLOW ANY ONLINE RESOURCE FOR THIS.
 ## Set up environment:
 ```
 bash setup_env.sh

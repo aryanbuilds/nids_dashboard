@@ -1,15 +1,15 @@
+# Flask API to serve logs from the database.
 from flask import Flask, jsonify
 from flask_cors import CORS
 import sqlite3
+from config import Config
 
 app = Flask(__name__)
 CORS(app)
 
-DB_PATH = 'nids.db'
-
 @app.route('/api/logs', methods=['GET'])
 def get_logs():
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(Config.DB_PATH)
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM logs ORDER BY timestamp DESC LIMIT 100')
     rows = cursor.fetchall()

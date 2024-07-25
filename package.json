@@ -1,5 +1,20 @@
 {
+  "name": "nids-frontend",
+  "version": "1.0.0",
+  "private": true,
   "dependencies": {
-    "chart.js": "^4.4.3"
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "socket.io-client": "^4.0.0",
+    "chart.js": "^3.2.1",
+    "react-chartjs-2": "^3.0.3"
+  },
+  "scripts": {
+    "start": "react run start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   }
 }

@@ -1,4 +1,7 @@
 # Setup Steps
+
+# THIS BRANCH IS CREATED TO PROCESS FAST.LOG file of SURICATA OTHER THAN EVE.JSON.
+
 >[!info] SURICATA REQUIRED TO SETUP FOLLOW ANY ONLINE RESOURCE FOR THIS.
 ## Set up whole environment:
 - give permission to files
